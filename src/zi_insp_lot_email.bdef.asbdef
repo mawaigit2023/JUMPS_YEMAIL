@@ -1,0 +1,9 @@
+managed;
+define behavior for ZI_INSP_LOT_EMAIL //alias <alias_name>
+persistent table yinsp_lot_email
+lock master
+{
+  create;
+  update;
+  delete;
+}

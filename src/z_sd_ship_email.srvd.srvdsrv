@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service binding for ship email'
+define service Z_SD_SHIP_EMAIL {
+  expose ZI_SHIP_EMAIL;
+}

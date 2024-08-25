@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service binding for lot email'
+define service Z_SD_INSP_LOT_EMAIL {
+  expose ZI_INSP_LOT_EMAIL;
+}

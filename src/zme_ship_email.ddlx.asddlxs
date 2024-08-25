@@ -1,0 +1,26 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Transport Data',
+                typeNamePlural: 'Transport Data',
+                title: { type: #STANDARD, label: 'Travel', value: 'emailid' } }
+              }
+annotate view ZI_SHIP_EMAIL with
+{
+  @UI.facet: [ { id:              'Travel',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'Transport Data',
+                 position:        10 } ]
+
+  @UI: {  lineItem:       [ { position: 10 } ],
+          identification: [ { position: 10 } ],
+          selectionField: [ { position: 10 } ] }
+  @EndUserText.label: 'E-Mail'
+  emailid;
+
+  @UI: {  lineItem:       [ { position: 20 } ],
+         identification: [ { position: 20 } ] }
+  @EndUserText.label: 'TO/CC'
+  to_cc;
+    
+  }

@@ -1,0 +1,13 @@
+managed; //implementation in class zbp_i_eway_transp_data unique;
+//strict ( 1 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZI_SHIP_EMAIL //alias <alias_name>
+persistent table yship_email
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

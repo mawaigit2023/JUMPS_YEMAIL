@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service binding for rejected inspection lot'
+define service Z_SD_INSP_LOT_REJ {
+  expose ZI_INSP_LOT_REJ;
+}
